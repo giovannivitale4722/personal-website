@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni Vitale Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center p-4 md:p-8 bg-gradient-to-r from-purple-50 to-indigo-100">
+
+        <!-- Main container for the two-column layout -->
+        <div class="container mx-auto w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
+
+            <!-- Left Column: Info Box -->
+            <div class="w-full max-w-sm p-6 bg-white rounded-xl shadow-2xl border border-gray-200">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-2">
+                    Giovanni Vitale
+                </h1>
+                <p class="text-xl md:text-2xl text-indigo-600 font-semibold mb-1">
+                    Aspiring Software Engineer
+                </p>
+                <p class="text-lg md:text-xl text-gray-700 mb-6">
+                    Current Quant Researcher at Acadia Analytics
+                </p>
+                <div class="flex flex-col space-y-4">
+                    <a href="#skills" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out text-center w-full">
+                        Skills
+                    </a>
+                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out text-center w-full">
+                        Projects
+                    </a>
+                    <a href="#achievements" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out text-center w-full">
+                        Achievements
+                    </a>
+                    <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out text-center w-full">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Vertical Timeline -->
+            <div class="w-full">
+                <div class="relative py-4">
+                    <!-- The vertical line running down the center of the timeline -->
+                    <div class="absolute top-0 h-full w-0.5 bg-indigo-200 left-3"></div>
+
+                    <div class="relative mb-8">
+                        <div class="absolute top-2 left-3 w-4 h-4 bg-indigo-600 rounded-full -ml-2 border-2 border-white shadow"></div>
+                        <div class="ml-10 p-4 bg-white rounded-lg shadow-md border border-gray-200">
+                            <h3 class="font-bold text-lg text-gray-800">Quantitative Researcher Intern</h3>
+                            <p class="text-sm font-medium text-indigo-600">Acadia Analytics</p>
+                            <p class="text-xs text-gray-500 mt-1">May 2025 - Present</p>
+                            <p class="text-gray-600 mt-2 text-sm">Developing and implementing quantitative models for risk assessment and algorithmic trading strategies.</p>
+                        </div>
+                    </div>
+
+                
+                    <div class="relative mb-8">
+                        <div class="absolute top-2 left-3 w-4 h-4 bg-indigo-600 rounded-full -ml-2 border-2 border-white shadow"></div>
+                        <div class="ml-10 p-4 bg-white rounded-lg shadow-md border border-gray-200">
+                            <h3 class="font-bold text-lg text-gray-800">B.S. in Computer Science & Math</h3>
+                            <p class="text-sm font-medium text-indigo-600">Stony Brook University</p>
+                            <p class="text-xs text-gray-500 mt-1">2024 - 2027</p>
+                            <p class="text-gray-600 mt-2 text-sm">Coursework: Data Structures & Algorithms, Machine Learning, Distributed Systems.</p>
+                        </div>
+                    </div>
+
+                   
+                    <div class="relative">
+                        <div class="absolute top-2 left-3 w-4 h-4 bg-indigo-600 rounded-full -ml-2 border-2 border-white shadow"></div>
+                        <div class="ml-10 p-4 bg-white rounded-lg shadow-md border border-gray-200">
+                            <h3 class="font-bold text-lg text-gray-800">Academic & Test Prep Tutor</h3>
+                            <p class="text-sm font-medium text-indigo-600">Freelance & West Palm Test Prep</p>
+                            <p class="text-xs text-gray-500 mt-1">June 2022 - Present</p>
+                            <p class="text-gray-600 mt-2 text-sm">For over three years, I've tutored students independently in competition math and Hunter entrance exam prep, in addition to my current contract work as an SAT tutor for a private company.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="skills" class="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+        <h2 class="text-4xl font-bold text-gray-800">Skills</h2>
+    </section>
+
+    <section id="projects" class="min-h-screen bg-white flex items-center justify-center p-8">
+        <h2 class="text-4xl font-bold text-gray-800">My Projects</h2>
+    </section>
+
+    <section id="achievements" class="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+        <h2 class="text-4xl font-bold text-gray-800">Achievements</h2>
+    </section>
+
+    <section id="contact" class="min-h-screen bg-white flex items-center justify-center p-8">
+        <h2 class="text-4xl font-bold text-gray-800">Contact Me</h2>
+    </section>
+
+</body>
+</html>
